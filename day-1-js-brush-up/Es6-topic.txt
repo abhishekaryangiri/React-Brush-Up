@@ -1,0 +1,18 @@
+let/const/var keyword
+Arrow Functions
+The ... operator(spread/rest operator)
+for.of loop
+map objects
+set objects
+Classes
+Promises
+Symbols
+Default parameters
+String methods
+Array methods(key, values, entries etc)
+Array from()
+Array key()
+Array find()
+Array findIndex()
+object entriesjs modules
+new math methods
