@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="mx-10" action="registerCitizen" id="loginForm" method="Post">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div class="mb-3" style="flex: 1; min-width: 300px;">
+                <label class="form-label" for="address">First Name*</label>
+                <input
+                    onfocus="myFunction()"
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your first name"
+                    oninput="validateFirstName()"
+                />
+                <span id="firstNameError" style="color: red"></span>
+            </div>
+    
+            <div class="mb-3" style="flex: 1; min-width: 300px;">
+                <label class="form-label" for="address">Last Name*</label>
+                <input
+                    onfocus="myFunction()"
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your last name"
+                    oninput="validateLastName()"
+                />
+                <span id="lastNameError" style="color: red"></span>
+            </div>
+    
+            <div class="mb-3" style="flex: 1; min-width: 300px;">
+                <label for="username" class="form-label font-bold">Mobile*</label>
+                <input
+                    type="text"
+                    name="mobile"
+                    class="form-control"
+                    id="mobile"
+                    placeholder="Enter your mob no:"
+                    oninput="validateMobile()"
+                />
+                <span id="mobileError" style="color: red"></span>
+            </div>
+    
+            <div class="mb-3" style="flex: 1; min-width: 300px;">
+                <label for="username" class="form-label font-bold">Email*</label>
+                <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    oninput="validateEmail()"
+                />
+                <span id="emailError" style="color: red"></span>
+            </div>
+    
+            <div class="mb-3" style="flex: 1; min-width: 300px;">
+                <label for="teacherName" class="form-label font-bold">Favourite Teacher's Name:</label>
+                <input
+                    type="text"
+                    name="teacherName"
+                    class="form-control"
+                    id="teacherName"
+                    placeholder="Enter your favorite teacher's name"
+                    oninput="validateteacherName()"
+                />
+                <span id="teacherNameError" style="color: red"></span>
+            </div>
+    
+            <div class="mb-3" style="flex: 1; min-width: 300px;">
+                <label for="password" class="form-label font-bold">Password*</label>
+                <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Abc123"
+                    oninput="validatePassword()"
+                />
+                <span id="passwordError" style="color: red"></span>
+                <c:if test="${not empty status}">
+                    <p>${statusMessage}</p>
+                </c:if>
+            </div>
+        </div>
+    
+        <div class="text-center" style="margin-top: 20px;">
+            <button id="loginButton" type="submit" class="btn btn-submit mt-3">Register</button>
+            <a
+                href="home-page"
+                style="background-color: orange; padding: 10px 10px; color: white; text-decoration: none; border-radius: 5px; margin-left: 10px;">
+                Home
+            </a>
+        </div>
+    </form>
+</body>
+</html>
