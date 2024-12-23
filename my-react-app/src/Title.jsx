@@ -1,16 +1,19 @@
+import "./Title.css";
 
-
-function Title(){
-    return(
-        <h2>This is new title</h2>
-    )
+function Title() {
+  return (
+    <div className="Title">
+      <h2>This is new title wit css</h2>
+    </div>
+  );
 }
 
 function Title2() {
-    return (
-        <h5>Thius is second title</h5>
-    )
-
+  return (
+    <div>
+      <h5>Thius is second title</h5>
+    </div>
+  );
 }
 
 function Title3() {
@@ -21,11 +24,17 @@ function Title3() {
 
 
 function JsxCurlyBrac(){
+    let name = "Abhi";
     return(
-        <h3>10 * 10 = {10*10}</h3>
-        //return 10 * 10 = 100, 1stwala ischanging
+        <div>
+            <h3>10 * 10 = {10*10}</h3>
+            {/* return 10 * 10 = 100, 
+            1stwala ischanging */}
+            <h3>Hello, {name.toUpperCase()}</h3>
+        </div>
     )
 }
+
 
 
 

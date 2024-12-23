@@ -5,7 +5,7 @@ import Description from "./Description.jsx";
 function App() {
 
  return (
-  <div>
+  <>
     <Title/>
     <Title2/>
     <Title3/>
@@ -14,8 +14,12 @@ function App() {
     <h1>Hllo this is context 1</h1>
     <h2>hello content 2</h2>
     <img src="" alt="" />
-  </div>
+  </>
  )
 }
+
+
+//react fragment: combine multiple element/entity in 1
+//  prevent creating extra node <div>, prevent tp create extra node: instead of div, we will use <></>
 
 export default App
