@@ -1,7 +1,7 @@
 import './Product.css';
 // import Title from './Title';
 
-function Product({title, price, description}) {
+function Product({title, price=1, description}) {
     return (
         <div className="Product">
             {/* <Title /> */}

@@ -11,6 +11,11 @@ Currently, two official plugins are available:
 # React props:
  - props r the information that we pass to the jsx
  
+ ## function Product({title, price=10000, description})
+
+-  here if we did not set the price for any product then, by default if willrice for that product.show 10000 pe
+
+#Passig arrays to prop 
 
 
 

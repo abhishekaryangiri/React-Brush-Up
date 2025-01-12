@@ -4,9 +4,9 @@ function ProductTab(){
 
     return(
         <>
-            <Product title ="phone" price=" ₹ 1,999" description="India's LArgest Selling Phone" />
-            <Product title = "laptop" price="₹ 8,999" description="Best laptop in market" />
-            <Product title = "shoes" price="₹ 10,999" description="Most trending shoes"/>
+            <Product title ="phone" price = { 1999 } description="India's Largest Selling Phone" />
+            <Product title = "laptop" price = { 9999 *2 }  description="Best laptop in market" />
+            <Product title = "shoes" description="Most trending shoes"/>
         </>
     );
 }
